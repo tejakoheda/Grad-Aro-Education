@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import "./styles/main.css";
 
 import Header from "./components/Header";
@@ -10,12 +11,29 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-  // Enable scroll animations
+  useEffect(() => {
+    // Intersection Observer to trigger animations when elements enter viewport
+    const observerOptions = {
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    }, observerOptions);
+
+    const animatedElements = document.querySelectorAll(".animate");
+    animatedElements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <>
       <Header />
-
       <main>
         <Hero />
         <Benefits />
@@ -24,7 +42,6 @@ function App() {
         <CTA />
         <Contact />
       </main>
-
       <Footer />
     </>
   );

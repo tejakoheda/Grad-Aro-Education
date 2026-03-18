@@ -66,7 +66,7 @@ const Destinations = () => {
             <h3>{d.title}</h3>
             <ul>
               {d.points.map((p, j) => (
-                <li key={j}>• {p}</li>
+                <li key={j}> {p}</li>
               ))}
             </ul>
           </div>
