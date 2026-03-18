@@ -8,7 +8,7 @@ const Header = () => {
           <img src={logo} alt="logo" />
           <div>
             <h2>Grad Aro Education</h2>
-            <p className="tagline">Aim Higher. Study Worldwide.</p>
+            <p className="tagline">From Local Dreams to Global Degree</p>
           </div>
         </div>
 

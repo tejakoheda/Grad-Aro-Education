@@ -1,7 +1,7 @@
 const Footer = () => (
   <div className="footer">
     <h3>Grad Aro Education</h3>
-    <p>"Aim Higher. Study Worldwide."</p>
+    <p>"From Local Dreams to Global Degree"</p>
   </div>
 );
 
