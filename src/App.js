@@ -12,7 +12,6 @@ import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
-    // Intersection Observer to trigger animations when elements enter viewport
     const observerOptions = {
       threshold: 0.1,
     };

@@ -1,4 +1,4 @@
-import hero from "../assets/hero.jpg";
+import hero2 from "../assets/hero2.jpeg";
 
 const Hero = () => (
   <section className="hero">
@@ -23,7 +23,7 @@ const Hero = () => (
       </div>
 
       <div className="hero-right animate">
-        <img src={hero} alt="students" />
+        <img src={hero2} alt="students" />
       </div>
     </div>
   </section>
