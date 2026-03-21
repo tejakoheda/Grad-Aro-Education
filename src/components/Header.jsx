@@ -1,11 +1,11 @@
-import logo from "../assets/logo.png";
+import logo2 from "../assets/logo2.png";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="container header-inner">
         <div className="logo-box">
-          <img src={logo} alt="logo" />
+          <img src={logo2} alt="logo" />
           <div>
             <h2>Grad Aro Education</h2>
             <p className="tagline">From Local Dreams to Global Degree</p>
